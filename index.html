@@ -240,9 +240,9 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>Special gift</h1>
-<p>For someone i love the most. <br>But you have to unlock it.</p>
-<button onclick="next()">Unlock</button>
+<h1>I have something for you</h1>
+<p>But you have to guess the code first!</p>
+<button onclick="next()">Continue</button>
 </section>
 
 <!-- pin -->
@@ -282,7 +282,7 @@ Points: <span id="score">0</span> / 3
 <!-- final -->
 <section class="card">
 
-<h1>Another Month of Us</h1>
+<h1> To My Favorite Person</h1>
 
 <div class="lovebox">
 <div class="timer-title">TIME WITH YOU</div>
@@ -336,7 +336,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '1402';
+const correctPin = '0905';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -384,9 +384,9 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"When did we first meet? ", options:["14 February"," 24 January","22 January"],correct:2},
-{q:"Who loves the most?", options:["You","100% me","Both"],correct:2},
-{q:"What’s on my mind most of the time?", options:["Anime","Someone else","You (my pretty girlfriend"],correct:2}
+{q:"when was the first day you reached out to me?", options:["7 march","6 march","8 march"],correct:0},
+{q:"when do i miss you?", options:["just some time","every time","never"],correct:1},
+{q:"do you love me?", options:["no","so much","i hate you"],correct:1}
 ];
 
 let currentQ = 0;
@@ -451,7 +451,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2026-01-22T00:00:00");
+    const start = new Date("2026-03-07T00:00:00");
 
     setInterval(()=>{
 
@@ -485,12 +485,7 @@ function revealMemory(el){
     `;
 
     const text = `
-      Even all the beautiful words in the world still wouldn’t be enough to explain how much you mean to me. Yet here you are, right in my life, and somehow that alone says everything. I admire the little things about you—the way you care about me, the way you talk, and how your eyes light up when you’re excited, especially when it’s with me. 
-
-      With you, I’ve found a kind of peace I didn’t even know I was looking for. It’s a kind of comfort I didn’t know I needed until I found it in you. It’s something I can’t find anywhere else, no matter how hard I try. Every moment with you, no matter how small, feels important and meaningful.
-      
-      Thank you for being here with me, for every moment, every word, and every feeling we’ve shared. Happy 2nd mensiversary, sayangku. I’m so grateful for you, today and always. ❤️  
-      `;
+    we've been through a lot together, and as each day passes, i realize more and more how grateful im that you are here. i know these past two months haven't always been smooth sailing, but i swear to god, you've truly amazed me. i really adore you now. i love you, i want you, i want to be with you — i'd risk it all for you. i know exactly what I said, and i meant every word of it. thank you for always trying and always listening to me. i genuinely feel like we're deeply connected. thank you for choosing me, thank you for accepting me, and thank you for being here with me. my days are brighter because of you, and im sure they always will be. i hope i have the same impact on your life too, ma vie. ♡      `;
 
     const paragraphs = text.trim().split(/\n\s*\n/);
 
